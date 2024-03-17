@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f1f1" >
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:textColor="#454545"
+            android:gravity="center_horizontal"
+            android:text="SMART WASTE COLLECTION" />
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:lottie_url="https://assets3.lottiefiles.com/packages/lf20_ycXDlOyJWi.json"
+            app:lottie_autoPlay="true"
+            android:layout_margin="10dp"
+            app:lottie_loop="true"/>
+
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="85dp"
+            android:textSize="25dp"
+            android:textColor="#454545"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:text="MUHAMMAD ZAIN 3071 \n MARYAM FATIMA 3032 " />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:textSize="20dp"
+            android:textColor="#454545"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:text="Abasyn University Islamabad Campus" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

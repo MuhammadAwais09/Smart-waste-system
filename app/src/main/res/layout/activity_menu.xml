@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".menu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="390dp"
+            android:layout_height="250dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:onClick="driver"
+            >
+
+            <!--
+            In the above cardview widget
+            cardelevation property will give elevation to your card view
+            card corner radius will provide radius to your card view
+            card background color will give background color to your card view
+            card max elevation will give the cardview maximum elevation
+            card prevent corner overlap will add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
+            card use compact padding will add padding in API v21+ as well to have the same measurements with previous versions.
+            below are the two widgets imageview and text view we are displaying inside our card view.
+            -->
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="300dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                app:lottie_url="https://assets6.lottiefiles.com/packages/lf20_68J4bH.json"
+                app:lottie_autoPlay="true"
+                android:layout_margin="0dp"
+                app:lottie_loop="true"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driver App"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="360dp"
+        >
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="390dp"
+            android:layout_height="250dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:onClick="admin"
+            >
+
+            <!--
+            In the above cardview widget
+            cardelevation property will give elevation to your card view
+            card corner radius will provide radius to your card view
+            card background color will give background color to your card view
+            card max elevation will give the cardview maximum elevation
+            card prevent corner overlap will add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
+            card use compact padding will add padding in API v21+ as well to have the same measurements with previous versions.
+            below are the two widgets imageview and text view we are displaying inside our card view.
+            -->
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView1"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_url="https://assets2.lottiefiles.com/packages/lf20_4ejZJA.json" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin Console"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
